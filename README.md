@@ -4,7 +4,7 @@
 
 
 * Your app should persistently store authors and books, and you'll have to set up those relationships in your `xcdatamodeld`. Each book has one author, but each author may have multiple books.
-* Create in your `DataStore` class a function named `generateTestData`, which inserts the following books and authors into your data store:
+* Create in your `DataStore` a function named `generateTestData`, which inserts the following books and authors into your data store:
   * *The Swift Programming Language* by Apple Inc.
   * *Hacking with Swift* and *Pro Swift* by Paul Hudson
   * *Advanced Swift* by Chris Eidhof
