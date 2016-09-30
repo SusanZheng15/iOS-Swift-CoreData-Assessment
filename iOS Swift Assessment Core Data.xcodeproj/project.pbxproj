@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3254B01D9E079B00864DED /* Books+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3254AC1D9E079B00864DED /* Books+CoreDataClass.swift */; };
+		1B3254B11D9E079B00864DED /* Books+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3254AD1D9E079B00864DED /* Books+CoreDataProperties.swift */; };
+		1B3254B21D9E079B00864DED /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3254AE1D9E079B00864DED /* Author+CoreDataClass.swift */; };
+		1B3254B31D9E079B00864DED /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3254AF1D9E079B00864DED /* Author+CoreDataProperties.swift */; };
 		1BFDA7621D4F83270060EEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7611D4F83270060EEDE /* AppDelegate.swift */; };
 		1BFDA7671D4F83270060EEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDA7651D4F83270060EEDE /* Main.storyboard */; };
 		1BFDA76A1D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B3254AC1D9E079B00864DED /* Books+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Books+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1B3254AD1D9E079B00864DED /* Books+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Books+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1B3254AE1D9E079B00864DED /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1B3254AF1D9E079B00864DED /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1BFDA75E1D4F83270060EEDE /* iOS Swift Assessment Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Swift Assessment Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFDA7611D4F83270060EEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BFDA7661D4F83270060EEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 		1BFDA7601D4F83270060EEDE /* iOS Swift Assessment Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				1B3254AC1D9E079B00864DED /* Books+CoreDataClass.swift */,
+				1B3254AD1D9E079B00864DED /* Books+CoreDataProperties.swift */,
+				1B3254AE1D9E079B00864DED /* Author+CoreDataClass.swift */,
+				1B3254AF1D9E079B00864DED /* Author+CoreDataProperties.swift */,
 				1BFDA7611D4F83270060EEDE /* AppDelegate.swift */,
 				1BFDA7761D4F834A0060EEDE /* DataStore.swift */,
 				1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */,
@@ -147,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3254B31D9E079B00864DED /* Author+CoreDataProperties.swift in Sources */,
+				1B3254B21D9E079B00864DED /* Author+CoreDataClass.swift in Sources */,
 				1BFDA7771D4F834A0060EEDE /* DataStore.swift in Sources */,
+				1B3254B11D9E079B00864DED /* Books+CoreDataProperties.swift in Sources */,
 				1BFDA7621D4F83270060EEDE /* AppDelegate.swift in Sources */,
+				1B3254B01D9E079B00864DED /* Books+CoreDataClass.swift in Sources */,
 				1BFDA76A1D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

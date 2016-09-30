@@ -14,15 +14,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var store = DataStore()
+    
+    var authors : [Author] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        /*
-         
-         *  Insert the code to print the authors and books from your DataStore here.
-         
-         */
+        store.fetchData()
         
+        print(store.authors.first?.books.first?.name)
+        for author in store.authors
+        {
+            if let name = author.name
+            {
+                print("name:\(name)")
+            }
+            
+            for books in author.books
+            {
+                if let book = books.name
+                {
+                    print("Books: \(book)")
+                }
+                
+            }
+            
+        }
+    
         //////////////
         return true // Don't touch this!
         //////////////

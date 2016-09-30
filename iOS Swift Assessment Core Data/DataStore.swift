@@ -9,7 +9,71 @@
 import Foundation
 import CoreData
 
-struct DataStore {
+struct DataStore
+{
+    
+
+    var authors : [Author] = []
+    var books: [Books] = []
+    
+    static let store = DataStore()
+    
+    
+    mutating func fetchData ()
+    {
+        
+        let request : NSFetchRequest<Author> = Author.fetchRequest()
+        
+        do{
+            authors = try self.managedObjectContext.fetch(request)
+    
+        }catch{
+            print("Error")
+            
+        }
+        
+        if authors.count == 0
+        {
+            generateTestData()
+        }
+
+    }
+    
+     mutating func generateTestData()
+     {
+     
+        let author1: Author = NSEntityDescription.insertNewObject(forEntityName: "Author", into: managedObjectContext) as! Author
+        author1.name = "Apple Inc."
+        
+        let author2: Author = NSEntityDescription.insertNewObject(forEntityName: "Author", into: managedObjectContext) as! Author
+        author2.name = "Paul Hudson"
+        
+        let author3: Author = NSEntityDescription.insertNewObject(forEntityName: "Author", into: managedObjectContext) as! Author
+        author3.name = "Chris Eidhof"
+        
+        
+        let book1: Books = NSEntityDescription.insertNewObject(forEntityName: "Books", into: managedObjectContext) as! Books
+        
+        book1.name = "The Swift Programming Language"
+        
+        let book2: Books = NSEntityDescription.insertNewObject(forEntityName: "Books", into: managedObjectContext) as! Books
+        
+        book2.name = "Hacking with Swift and Pro Swift"
+        
+        let book3: Books = NSEntityDescription.insertNewObject(forEntityName: "Books", into: managedObjectContext) as! Books
+        
+        book3.name = "Advanced Swift"
+        
+        author1.books.insert(book1)
+        author2.books.insert(book2)
+        author3.books.insert(book3)
+        
+        saveContext()
+        fetchData()
+    }
+ 
+    
+    
     
     lazy var applicationDocumentsDirectory: URL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.FlatironSchool.iOS_Swift_Assessment_Core_Data" in the application's documents Application Support directory.
